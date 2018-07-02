@@ -8,6 +8,7 @@
 import Foundation
 
 
+
 protocol Completable {
     
     var isComplete : Bool { get }
@@ -15,3 +16,4 @@ protocol Completable {
     func complete() -> Bool;
     
 }
+
