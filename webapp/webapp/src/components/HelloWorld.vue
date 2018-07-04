@@ -35,7 +35,7 @@
           <button class="btn btn-primary">Hello</button>
         </div>
         <div class="col-6">
-          <button class="btn btn-danger">There</button>
+          <button class="btn btn-danger" v-on:click="helloFetch">{{ test }}</button>
         </div>
       </div>
     </div>
@@ -43,11 +43,46 @@
 </template>
 
 <script>
+
+var axios = require('axios');
+
 export default {
   name: 'HelloWorld',
   props: {
-    msg: String
+    msg: String,
+  },
+  data() {
+    return {
+      test: "pardner"
+    }
+    
+  },
+  methods:{
+    helloFetch: function(){
+      var self = this;
+      //alert("in hello fetch");
+      axios.get("http://localhost:8081/items")
+      .then(function(data){
+        //alert(data);
+        //alert(data)
+        //alert(data.first())
+        
+        if(self.test == data.data[0].title){
+          self.test = data.data[1].title;
+        }
+        else{
+          self.test = data.data[0].title;
+        }
+        
+
+
+      });
+      //alert("after fetch");
+    }
   }
+
+
+  
 }
 </script>
 

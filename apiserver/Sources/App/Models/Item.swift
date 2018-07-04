@@ -17,8 +17,8 @@ final class Item : Completable, MySQLModel {
     var description: String;
     
     var isComplete: Bool;
-    let createdTime: Date?;
-    var editedTime: Date?;
+    var createdTime: Int?;
+    var editedTime: Int?;
     
     
     
@@ -27,12 +27,14 @@ final class Item : Completable, MySQLModel {
         title = "";
         description = "";
         isComplete = false;
-        createdTime = Date();
-        editedTime = Date();
+        createdTime = 0;
+        editedTime = 0;
+        //createdTime = Date();
+        //editedTime = Date();
         
     }
         
-    init(id: Int? = nil, titleString: String, descriptionString: String, completed : Bool, created: Date? = Date(), edited: Date? = Date()) {
+    init(id: Int? = nil, titleString: String, descriptionString: String, completed : Bool, created: Int? = 0, edited: Int? = 0){
         
         title = titleString;
         description = descriptionString;

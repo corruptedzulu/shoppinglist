@@ -5137,6 +5137,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0965CB2220EB236A0058A976 /* vars.env */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vars.env; sourceTree = "<group>"; };
 		"Console::Command::Product" /* Command.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Command.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Console::Console::Product" /* Console.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Console.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Console::Logging::Product" /* Logging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Logging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -7800,6 +7801,7 @@
 		OBJ_5 /*  */ = {
 			isa = PBXGroup;
 			children = (
+				0965CB2220EB236A0058A976 /* vars.env */,
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
 				OBJ_23 /* Tests */,
