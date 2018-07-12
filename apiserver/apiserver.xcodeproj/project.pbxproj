@@ -32,6 +32,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		0965CB2420EF318E0058A976 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0965CB2320EF318E0058A976 /* User.swift */; };
+		0965CB2720F5D36D0058A976 /* ItemUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0965CB2620F5D36D0058A976 /* ItemUser.swift */; };
 		OBJ_1082 /* AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* AppTests.swift */; };
 		OBJ_1084 /* App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "apiserver::App::Product" /* App.framework */; };
 		OBJ_1085 /* DotEnv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftDotEnv::DotEnv::Product" /* DotEnv.framework */; };
@@ -5138,6 +5140,8 @@
 
 /* Begin PBXFileReference section */
 		0965CB2220EB236A0058A976 /* vars.env */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vars.env; sourceTree = "<group>"; };
+		0965CB2320EF318E0058A976 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0965CB2620F5D36D0058A976 /* ItemUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemUser.swift; sourceTree = "<group>"; };
 		"Console::Command::Product" /* Command.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Command.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Console::Console::Product" /* Console.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Console.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Console::Logging::Product" /* Logging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Logging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -6756,6 +6760,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0965CB2520F5D35D0058A976 /* PivotTables */ = {
+			isa = PBXGroup;
+			children = (
+				0965CB2620F5D36D0058A976 /* ItemUser.swift */,
+			);
+			path = PivotTables;
+			sourceTree = "<group>";
+		};
 		OBJ_105 /* SQL */ = {
 			isa = PBXGroup;
 			children = (
@@ -6784,7 +6796,9 @@
 		OBJ_12 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0965CB2520F5D35D0058A976 /* PivotTables */,
 				OBJ_13 /* Item.swift */,
+				0965CB2320EF318E0058A976 /* User.swift */,
 				OBJ_14 /* Protocol */,
 				OBJ_16 /* Todo.swift */,
 			);
@@ -11831,6 +11845,7 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_941 /* ItemController.swift in Sources */,
+				0965CB2720F5D36D0058A976 /* ItemUser.swift in Sources */,
 				OBJ_942 /* TodoController.swift in Sources */,
 				OBJ_943 /* Item.swift in Sources */,
 				OBJ_944 /* Completable.swift in Sources */,
@@ -11838,6 +11853,7 @@
 				OBJ_946 /* app.swift in Sources */,
 				OBJ_947 /* boot.swift in Sources */,
 				OBJ_948 /* configure.swift in Sources */,
+				0965CB2420EF318E0058A976 /* User.swift in Sources */,
 				OBJ_949 /* routes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
